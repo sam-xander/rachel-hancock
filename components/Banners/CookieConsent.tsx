@@ -1,0 +1,58 @@
+import Link from "next/link";
+import Cookies from "js-cookie";
+import { MouseEvent, useEffect, useState } from "react";
+
+const USER_CONSENT_COOKIE_KEY = "cookie_consent_is_true";
+const USER_CONSENT_COOKIE_EXPIRE_DATE = 365;
+
+export default function CookieConsent() {
+  const [cookieConsentIsTrue, setCookieConsentIsTrue] = useState(true);
+
+  useEffect(() => {
+    const consentIsTrue = Cookies.get(USER_CONSENT_COOKIE_KEY) === "true";
+    setCookieConsentIsTrue(consentIsTrue);
+  }, []);
+
+  const onClick = (e: MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+
+    if (!cookieConsentIsTrue) {
+      Cookies.set(USER_CONSENT_COOKIE_KEY, "true", {
+        expires: USER_CONSENT_COOKIE_EXPIRE_DATE,
+      });
+      setCookieConsentIsTrue(true);
+    }
+  };
+
+  if (cookieConsentIsTrue) {
+    return null;
+  }
+
+  return (
+    <section className="fixed bottom-0 left-0 w-full">
+      <div className="flex flex-col items-start px-5 py-3 space-y-2 bg-[#f6f6f6]/80 backdrop-blur-md md:flex-row md:space-y-0 md:items-stretch md:space-x-2">
+        <div className="flex items-center flex-grow">
+          <p className="text-sm text-[#556973]">
+            This site uses services that use cookies to deliver better
+            experience and analyze traffic. You can learn more about the
+            services we use at our{" "}
+            <Link href="/privacy-policy">
+              <a className="text-sm underline hover:text-lightAccent">
+                privacy policy
+              </a>
+            </Link>
+            .
+          </p>
+        </div>
+        <div className="flex items-center">
+          <button
+            className="p-3 text-sm tracking-wider text-white uppercase bg-[#556973] hover:brightness-110 whitespace-nowrap"
+            onClick={onClick}
+          >
+            Accept
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+}
