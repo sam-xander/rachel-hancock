@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function About() {
   return (
     <div className="relative bg-[#8D6F57]">
@@ -17,17 +19,17 @@ export default function About() {
           About the Artist
         </h1>
         <p className="mt-2 max-w-3xl text-lg text-[#f6f6f6]/80">
-          Mattis amet hendrerit dolor, quisque lorem pharetra. Pellentesque
-          lacus nisi urna, arcu sociis eu. Orci vel lectus nisl eget eget ut
-          consectetur. Sit justo viverra non adipisicing elit distinctio.
+        Rachel captures the simple beauty of hidden places in our landscape.
+          She finds solace in painting the places that feel like home.
         </p>
         <div className="mt-12 sm:w-full sm:max-w-md lg:mt-8 lg:ml-0 lg:flex-1">
-          <a
-            href="https://www.google.co.uk/forms/about"
-            className="inline-block border border-transparent bg-[#f6f6f6] py-3 px-8 text-[#8D6F57] hover:brightness-110"
-          >
-            LEARN MORE
-          </a>
+        <Link href="/about">
+        <a
+          className="mt-12 inline-block tracking-widest border border-transparent bg-[#f6f6f6] py-3 px-8 text-[#2d241c] shadow-lg hover:brightness-110"
+        >
+          READ MORE
+        </a>
+        </Link>
         </div>
       </div>
     </div>

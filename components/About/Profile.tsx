@@ -7,9 +7,7 @@ export default function Profile() {
         <div className="absolute top-0 bottom-0 left-3/4 hidden w-screen bg-[#8D6F57]/80 lg:block" />
         <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
           <div>
-            <p className="text-md tracking-wider">
-              THE ARTIST
-            </p>
+            <p className="text-md tracking-wider">THE ARTIST</p>
             <h1 className="tracking-tight text-4xl sm:text-5xl lg:text-7xl">
               Meet Rachel
             </h1>
@@ -41,46 +39,35 @@ export default function Profile() {
           <div className="mt-8 lg:mt-0 space-y-6 opacity-80">
             <div className="mx-auto max-w-prose text-base lg:max-w-none">
               <p className="text-lg sm:text-xl tracking-wider">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+                Rachel studied Fine Art at Falmouth University. Now based in
+                Devon, she is studying for her Masters degree.
               </p>
             </div>
             <div className="mx-auto max-w-prose text-base lg:max-w-none">
               <p className="text-lg sm:text-xl tracking-wider">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+                Recently she has been exhibiting in galleries across the South
+                West, including in Fowey and the Rame Peninsula.
               </p>
             </div>
             <div className="mx-auto max-w-prose text-base lg:max-w-none">
               <p className="text-lg sm:text-xl tracking-wider">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+                She paints with oils on wood board and uses glazes to free up
+                her brushwork. Her neutral and muted palette is often met with
+                brighter hints of colour. There is a gentle quality in her work
+                that contrasts with her subtle hints of vibrancy.
               </p>
             </div>
             <div className="mx-auto max-w-prose text-base lg:max-w-none">
               <p className="text-lg sm:text-xl tracking-wider">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+                Rachel feels compelled to capture the simple beauty and quiet
+                places hidden in the Cornish landscape. Mainly the surrounding
+                woodland, as she finds they provide her with a sense of solace
+                that feels like home.
               </p>
             </div>
             <div className="mx-auto max-w-prose text-base lg:max-w-none">
               <p className="text-lg sm:text-xl tracking-wider">
-                Sagittis scelerisque nulla cursus in enim consectetur quam.
-                Dictum urna sed consectetur neque tristique pellentesque.
-                Blandit amet, sed aenean erat arcu morbi.
+                Her recent work explores her connection to the coast.
               </p>
             </div>
           </div>

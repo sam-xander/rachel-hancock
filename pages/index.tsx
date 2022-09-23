@@ -1,6 +1,6 @@
 import Header from "../components/Home/Header";
 import Gallery from "../components/Home/Gallery";
-import NewCollection from "../components/Home/NewCollection";
+import Collections from "../components/Home/Collections";
 import About from "../components/Home/About";
 import ContactForm from "../components/Contact/ContactForm";
 
@@ -13,12 +13,12 @@ export default function Home() {
     <>
       <Head>
         <title>Rachel Hancock Artist</title>
-        <meta name="description" content="Artist Rachel Hancock focuses on the blending of landscape and memory." />
+        <meta name="description" content="Rachel Hancock is an oil painter based in South West, England." />
       </Head>
 
       <Header />
       <Gallery />
-      <NewCollection />
+      <Collections />
       <About />
       <ContactForm />
     </>

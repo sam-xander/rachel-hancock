@@ -13,8 +13,8 @@ export default function ContactForm() {
         </div>
         <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
           <a
-            href="https://www.google.co.uk/forms/about"
-            className="inline-block border border-transparent bg-[#f6f6f6] py-3 px-8 text-[#556973] hover:brightness-110"
+            href="https://forms.gle/zYxRF5KYfSJ7C1pi6"
+            className="mt-12 inline-block tracking-widest border border-transparent bg-[#f6f6f6] py-3 px-8 text-[#2d241c] shadow-lg hover:brightness-110"
           >
             GET IN TOUCH
           </a>
