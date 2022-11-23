@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 const collections = [
   {
@@ -30,10 +31,11 @@ export default function Navbar() {
   return (
     <div className="sticky top-0 z-50 bg-[#f6f6f6]/75 backdrop-blur-md">
       <div className="flex justify-center items-center px-4 sm:px-6 lg:px-8">
-        <Link href="/">
-          <a className="text-4xl md:text-5xl pt-8 tracking-tight hidden md:block logo">
-            Rachel Hancock
-          </a>
+        <Link
+          href="/"
+          className="text-4xl md:text-5xl pt-8 tracking-tight hidden md:block logo"
+        >
+          Rachel Hancock
         </Link>
       </div>
       <Popover className="relative">
@@ -60,8 +62,8 @@ export default function Navbar() {
                   : ""
               }
             >
-              <Link href="/">
-                <a className="tracking-widest">HOME</a>
+              <Link href="/" className="tracking-widest">
+                HOME
               </Link>
             </div>
             <Popover className="relative">
@@ -80,7 +82,9 @@ export default function Navbar() {
                           : ""
                       }
                     >
-                      <a className="tracking-widest">COLLECTIONS</a>
+                      <Link href="" className="tracking-widest">
+                        COLLECTIONS
+                      </Link>
                     </div>
                     <ChevronDownIcon
                       className={classNames(
@@ -105,56 +109,58 @@ export default function Navbar() {
                         <div className="relative grid gap-6 bg-[#F6F6F6] px-5 py-6 sm:gap-8 sm:p-8 grid-cols-2">
                           {collections.map((collection) => (
                             <div key={collection.name}>
-                              <Link href={collection.href}>
-                                <a className="flex aspect-w-4 aspect-h-3">
-                                  <img
-                                    src={collection.src}
-                                    className="pb-4 object-cover object-center opacity-80 hover:opacity-100"
-                                  />
-                                </a>
+                              <Link
+                                href={collection.href}
+                                className="flex aspect-w-4 aspect-h-3"
+                              >
+                                <Image
+                                  src={collection.src}
+                                  alt=""
+                                  className="pb-4 object-cover object-center opacity-80 hover:opacity-100"
+                                  fill
+                                />
                               </Link>
-                              <Link href={collection.href}>
-                                <a
-                                  href={collection.href}
-                                  className="-m-3 flex items-start rounded-sm p-3 hover:brightness-110"
-                                >
-                                  <div className="mx-2">
-                                    <p className="text-base font-medium text-[#8D6F57]/90">
-                                      {collection.name}
-                                    </p>
-                                    <p className="mt-1 text-sm text-[#8D6F57]/80">
-                                      {collection.description}
-                                    </p>
-                                  </div>
-                                </a>
+                              <Link
+                                href={collection.href}
+                                className="-m-3 flex items-start rounded-sm p-3 hover:brightness-110"
+                              >
+                                <div className="mx-2">
+                                  <p className="text-base font-medium text-[#8D6F57]/90">
+                                    {collection.name}
+                                  </p>
+                                  <p className="mt-1 text-sm text-[#8D6F57]/80">
+                                    {collection.description}
+                                  </p>
+                                </div>
                               </Link>
                             </div>
                           ))}
                         </div>
                         <div className="p-5 sm:p-8 bg-[#F6F6F6]">
-                          <Link href="/collections">
-                            <a className="-m-3 flow-root p-3 arrow-hover-outer bg-[#8D6F57] hover:brightness-110">
-                              <div className="flex justify-center items-center">
-                                <div className="text-[#f6f6f6]">
-                                  VIEW COLLECTIONS
-                                </div>
-                                <span className="ml-3 inline-flex items-center rounded-full px-3 py-0.5 text-xs leading-5 text-white arrow-hover-inner">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16"
-                                    height="16"
-                                    fill="currentColor"
-                                    className="bi bi-arrow-right"
-                                    viewBox="0 0 16 16"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
-                                    />
-                                  </svg>
-                                </span>
+                          <Link
+                            href="/collections"
+                            className="-m-3 flow-root p-3 arrow-hover-outer bg-[#8D6F57] hover:brightness-110"
+                          >
+                            <div className="flex justify-center items-center">
+                              <div className="text-[#f6f6f6]">
+                                VIEW COLLECTIONS
                               </div>
-                            </a>
+                              <span className="ml-3 inline-flex items-center rounded-full px-3 py-0.5 text-xs leading-5 text-white arrow-hover-inner">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="16"
+                                  height="16"
+                                  fill="currentColor"
+                                  className="bi bi-arrow-right"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                                  />
+                                </svg>
+                              </span>
+                            </div>
                           </Link>
                         </div>
                       </div>
@@ -170,8 +176,8 @@ export default function Navbar() {
                   : ""
               }
             >
-              <Link href="/gallery">
-                <a className="tracking-widest">GALLERY</a>
+              <Link href="/gallery" className="tracking-widest">
+                GALLERY
               </Link>
             </div>
             <div
@@ -181,13 +187,13 @@ export default function Navbar() {
                   : ""
               }
             >
-              <Link href="/about">
-                <a className="tracking-widest">ABOUT</a>
+              <Link href="/about" className="tracking-widest">
+                ABOUT
               </Link>
             </div>
           </Popover.Group>
           <div className="hidden space-x-8 pr-8 items-center justify-end md:flex md:flex-1 lg:w-0">
-            <a href="https://instagram.com/rachel_paints_" id="social">
+            <Link href="https://instagram.com/rachel_paints_" id="social">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -198,8 +204,8 @@ export default function Navbar() {
               >
                 <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
               </svg>
-            </a>
-            <a href="https://www.etsy.com/uk/shop/UnfurledStudio" id="shop">
+            </Link>
+            <Link href="https://www.etsy.com/uk/shop/UnfurledStudio" id="shop">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="17"
@@ -210,7 +216,7 @@ export default function Navbar() {
               >
                 <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -243,45 +249,47 @@ export default function Navbar() {
                 <div className="mt-6">
                   <nav className="grid grid-cols-1 gap-7">
                     {collections.map((collection) => (
-                      <a
+                      <Link
                         key={collection.name}
                         href={collection.href}
                         className="-m-3 flex items-center rounded-lg p-3 hover:bg-[gray-50]"
                       >
                         <div className="grid grid-cols-5 hover:brightness-110 items-center">
-                          <img
+                          <Image
                             src={collection.src}
-                            className="h-20 w-auto col-span-1"
+                            alt=""
+                            className="col-span-1 object-contain"
+                            fill
                           />
                           <p className="px-4 col-span-4">{collection.name}</p>
                         </div>
-                      </a>
+                      </Link>
                     ))}
                   </nav>
                 </div>
               </div>
               <div className="py-6 px-5">
                 <div className="grid grid-cols-2 gap-4">
-                  <Link href="/">
-                    <a className="hover:brightness-110">HOME</a>
+                  <Link href="/" className="hover:brightness-110">
+                    HOME
                   </Link>
-                  <Link href="/">
-                    <a className="hover:brightness-110">COLLECTIONS</a>
+                  <Link href="/" className="hover:brightness-110">
+                    COLLECTIONS
                   </Link>
-                  <Link href="/">
-                    <a className="hover:brightness-110">GALLERY</a>
+                  <Link href="/" className="hover:brightness-110">
+                    GALLERY
                   </Link>
-                  <Link href="/">
-                    <a className="hover:brightness-110">ABOUT</a>
+                  <Link href="/" className="hover:brightness-110">
+                    ABOUT
                   </Link>
                 </div>
                 <div className="mt-6">
-                  <a
+                  <Link
                     href="#"
                     className="flex w-full items-center justify-center border border-transparent bg-[#8D6F57] px-4 py-2 text-[#f6f6f6] shadow-sm hover:brightness-110"
                   >
                     GET IN TOUCH
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

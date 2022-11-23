@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function ContactForm() {
   return (
     <div className="relative">
@@ -12,12 +14,12 @@ export default function ContactForm() {
           </p>
         </div>
         <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
-          <a
+          <Link
             href="https://forms.gle/zYxRF5KYfSJ7C1pi6"
             className="mt-12 inline-block tracking-widest border border-transparent bg-[#f6f6f6] py-3 px-8 text-[#2d241c] shadow-lg hover:brightness-110"
           >
             GET IN TOUCH
-          </a>
+          </Link>
         </div>
       </div>
     </div>

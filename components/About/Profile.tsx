@@ -1,4 +1,5 @@
 import { CameraIcon } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 export default function Profile() {
   return (
@@ -18,12 +19,11 @@ export default function Profile() {
             <div className="relative mx-auto max-w-prose text-base lg:max-w-none">
               <figure>
                 <div className="aspect-w-12 aspect-h-10 lg:aspect-none">
-                  <img
+                  <Image
                     className="rounded-lg object-cover object-top shadow-lg"
                     src="/profile.jpg"
-                    alt="Whitney leaning against a railing on a downtown street"
-                    width={1184}
-                    height={1376}
+                    alt=""
+                    fill
                   />
                 </div>
                 <figcaption className="mt-3 flex text-sm">
