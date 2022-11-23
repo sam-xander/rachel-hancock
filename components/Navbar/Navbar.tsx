@@ -82,9 +82,7 @@ export default function Navbar() {
                           : ""
                       }
                     >
-                      <Link href="" className="tracking-widest">
-                        COLLECTIONS
-                      </Link>
+                      <a className="tracking-widest">COLLECTIONS</a>
                     </div>
                     <ChevronDownIcon
                       className={classNames(
@@ -143,7 +141,7 @@ export default function Navbar() {
                           >
                             <div className="flex justify-center items-center">
                               <div className="text-[#f6f6f6]">
-                                VIEW COLLECTIONS
+                                VIEW ALL COLLECTIONS
                               </div>
                               <span className="ml-3 inline-flex items-center rounded-full px-3 py-0.5 text-xs leading-5 text-white arrow-hover-inner">
                                 <svg

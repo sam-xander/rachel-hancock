@@ -52,7 +52,7 @@ export default function Header() {
         <p className="mt-4 text-lg sm:text-xl tracking-wider text-white/80"></p>
         <Link
           href="https://www.etsy.com/uk/shop/UnfurledStudio"
-          className="mt-12 inline-block tracking-widest border border-transparent bg-[#f6f6f6] py-3 px-8 text-[#2d241c] shadow-lg hover:brightness-110"
+          className="mt-12 inline-block tracking-widest border border-transparent bg-[#f6f6f6] py-3 px-8 text-[#8d6f57] shadow-lg hover:brightness-110"
         >
           SHOP NOW
         </Link>

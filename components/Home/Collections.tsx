@@ -69,7 +69,7 @@ export default function Collections() {
             href="/collections"
             className="mt-12 inline-block tracking-widest border border-transparent py-3 px-8 text-[#f6f6f6] shadow-lg hover:brightness-110 bg-[#556973]"
           >
-            VIEW COLLECTIONS
+            VIEW ALL COLLECTIONS
           </Link>
         </div>
       </div>
