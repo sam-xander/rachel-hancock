@@ -8,9 +8,10 @@ export default function ContactForm() {
           <h1 className="text-3xl tracking-tight text-white">
             Any Questions? Get in Touch
           </h1>
-          <p className="mt-4 max-w-3xl text-lg text-[#f6f6f6]/80">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            Lorem cupidatat commodo. Elit sunt amet fugiat.
+          <p className="mt-4 max-w-3xl text-lg text-[#f6f6f6]/80 tracking-wide">
+            Please reach out with any questions. Select &apos;get in touch&apos;
+            to fill out the form and once submitted I&apos;ll be able to get
+            back to you as soon as possible.
           </p>
         </div>
         <div className="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
