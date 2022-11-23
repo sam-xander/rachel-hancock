@@ -1,43 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Glacial Indifference';
-  src:
-  url('../public/fonts/GlacialIndifference-Regular.woff2') format('woff2'), /* Modern Browsers */
-  url('../public/fonts/GlacialIndifference-Regular.woff') format('woff'), /* Modern Browsers */
-  url('../public/fonts/GlacialIndifference-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
-  font-weight: normal, bold;
-}
-@font-face {
-  font-family: 'Glacial Indifference';
-  src:
-  url('../public/fonts/GlacialIndifference-Bold.woff2') format('woff2'), /* Modern Browsers */
-  url('../public/fonts/GlacialIndifference-Bold.woff') format('woff'), /* Less Modern Browsers */
-  url('../public/fonts/GlacialIndifference-Bold.ttf') format('truetype'); /* Safari, Android, iOS */
-  font-weight: bold;
-}
+@import url("https://fonts.googleapis.com/css2?family=Forum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: 'Glacial Indifference';
-  background: #F6F6F6;
-  color: #8D6F57;
-}
-a {
-  text-decoration: none;
-}
 * {
   box-sizing: border-box;
   transition-duration: 200ms;
 }
-h1, .logo {
-  font-family: 'Forum', cursive;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #f6f6f6;
+  color: #8d6f57;
+}
+a {
+  text-decoration: none;
+}
+h1,
+.logo {
+  font-family: "Forum", Georgia, cursive;
+}
+a,
+p {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 .arrow-hover-outer:hover .arrow-hover-inner {
   transition-duration: 200ms;
@@ -61,19 +48,19 @@ h1, .logo {
 
 @keyframes imagefade {
   0% {
-    opacity:1;
+    opacity: 1;
   }
   17% {
-    opacity:1;
+    opacity: 1;
   }
   25% {
-    opacity:0;
+    opacity: 0;
   }
   92% {
-    opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 
