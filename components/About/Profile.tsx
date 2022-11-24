@@ -1,4 +1,3 @@
-import { CameraIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 
 export default function Profile() {
@@ -8,15 +7,15 @@ export default function Profile() {
         <div className="absolute top-0 bottom-0 left-3/4 hidden w-screen bg-[#8D6F57]/80 lg:block" />
         <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
           <div>
-            <p className="text-md tracking-wider">THE ARTIST</p>
-            <h1 className="tracking-tight text-4xl sm:text-5xl lg:text-7xl">
+            <p className="text-md tracking-wider font-light pb-2">THE ARTIST</p>
+            <h1 className="tracking-widest text-4xl md:text-5xl pb-2 font-medium uppercase">
               Meet Rachel
             </h1>
           </div>
         </div>
         <div className="mt-8 lg:grid lg:grid-cols-2 lg:gap-8">
           <div className="relative lg:col-start-2 lg:row-start-1">
-            <div className="relative -translate-y-8 h-full mx-auto max-w-prose text-base lg:max-w-none">
+            <div className="relative lg:-translate-y-8 h-full mx-auto max-w-prose text-base lg:max-w-none">
               <div className="aspect-w-12 aspect-h-10 lg:aspect-none">
                 <Image
                   className="rounded-lg object-cover object-top shadow-lg"
@@ -28,8 +27,8 @@ export default function Profile() {
             </div>
           </div>
           <div className="mt-8 lg:mt-0 space-y-6 opacity-80">
-            <div className="mx-auto max-w-prose text-base lg:max-w-none">
-              <p className="text-lg sm:text-xl tracking-wide">
+            <div className="mx-auto max-w-prose lg:max-w-none">
+              <p className="text-lg sm:text-xl tracking-wide font-light">
                 Rachel Hancock is a landscape painter who studied for her BA in
                 Fine Art at Falmouth University and graduated in 2020. She is
                 currently studying for her MA at Plymouth Arts University.

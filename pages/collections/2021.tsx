@@ -1,10 +1,10 @@
 import Layout from "../../components/Layout/Layout";
 import { ReactElement } from "react";
 
-export default function AmongTheLiving() {
+export default function TwentyOne() {
   return <></>;
 }
 
-AmongTheLiving.getLayout = function getLayout(page: ReactElement) {
+TwentyOne.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };

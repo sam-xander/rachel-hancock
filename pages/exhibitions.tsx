@@ -1,21 +1,20 @@
-import ImageGallery from "../components/Gallery/ImageGallery";
-
 import Head from "next/head";
 import Layout from "../components/Layout/Layout";
 import { ReactElement } from "react";
+import Header from "../components/Exhibitions/Header";
 
-export default function Gallery() {
+export default function Exhibitions() {
   return (
     <>
       <Head>
-        <title>Our Privacy Policy</title>
+        <title>Exhibitions</title>
         <meta name="description" content="Website privacy policy page" />
       </Head>
-      <ImageGallery />
+      <Header />
     </>
   );
 }
 
-Gallery.getLayout = function getLayout(page: ReactElement) {
+Exhibitions.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };

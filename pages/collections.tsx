@@ -1,14 +1,14 @@
-import ImageLinks from "../components/Collections/ImageLinks";
+import ImageLinks from "../components/Gallery/ImageLinks";
 
-import Head from 'next/head'
+import Head from "next/head";
 import Layout from "../components/Layout/Layout";
-import { ReactElement } from 'react'
+import { ReactElement } from "react";
 
 export default function Collections() {
   return (
     <>
       <Head>
-        <title>Collections | Rachel Hancock</title>
+        <title>Collections</title>
         <meta name="description" content="Website privacy policy page" />
       </Head>
       <ImageLinks />
@@ -16,6 +16,6 @@ export default function Collections() {
   );
 }
 
-Collections.getLayout = function getLayout(page:ReactElement){
-  return <Layout>{page}</Layout>
-}
+Collections.getLayout = function getLayout(page: ReactElement) {
+  return <Layout>{page}</Layout>;
+};
