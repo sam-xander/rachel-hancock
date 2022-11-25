@@ -59,7 +59,7 @@ export default function Collections() {
       <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         {/* Background image and overlap */}
         <div className="relative pt-16 sm:pt-32 pb-12">
-          <h1 className="tracking-tight text-[#556973] text-4xl md:text-5xl opacity-80 uppercase font-medium pb-2">
+          <h1 className="tracking-tight text-[#556973] text-4xl md:text-5xl opacity-80 uppercase font-light pb-2">
             Collections
           </h1>
           <p className="mt-4 text-[#556973] text-lg sm:text-xl tracking-wider opacity-75 font-light">

@@ -6,7 +6,7 @@ export default function Exhibitions() {
     <div className="lg:relative">
       <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-36 lg:text-left">
         <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
-          <h3 className="text-4xl md:text-5xl uppercase font-medium tracking-widest opacity-95">
+          <h3 className="text-4xl md:text-5xl uppercase font-light tracking-widest opacity-95">
             EXHIBITIONS
           </h3>
           <p className="mt-4 text-lg md:text-xl tracking-wide opacity-80 font-light">

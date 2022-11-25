@@ -166,6 +166,13 @@ export default function Navbar() {
           </Popover.Panel>
         </Transition>
       </Popover>
+      <Link
+        href="/exhibitions"
+        className="bg-[#556973]/75 text-white flex justify-center font-light text-sm py-1 backdrop-blur-md"
+      >
+        AMONG THE LIVING
+        <span className="font-medium pl-2">16TH NOV - 4TH DEC</span>
+      </Link>
     </div>
   );
 }

@@ -46,13 +46,13 @@ export default function Header() {
         className="absolute inset-0 bg-[#2d241c] opacity-60"
       />
       <div className="relative mx-auto flex max-w-3xl flex-col items-center py-28 px-6 text-center sm:py-30 lg:px-0">
-        <h2 className="text-[#f6f6f6]/95 text-4xl md:text-6xl uppercase font-medium tracking-widest">
+        <h2 className="text-[#f6f6f6]/95 text-4xl md:text-6xl uppercase font-light tracking-widest">
           OIL PAINTINGS
         </h2>
         <Link
           href="https://www.etsy.com/uk/shop/UnfurledStudio"
           target="_blank"
-          className="mt-12 inline-block tracking-widest border border-transparent bg-[#f6f6f6] py-2.5 px-8 text-[#8d6f57] hover:brightness-90"
+          className="mt-12 inline-block tracking-widest border border-transparent bg-[#f6f6f6] py-2.5 px-8 text-[#8d6f57] hover:brightness-110"
         >
           SHOP NOW
         </Link>
