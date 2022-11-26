@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/Collections", "lib/collections.js"  ],
   "exclude": [
     "node_modules"
   ]

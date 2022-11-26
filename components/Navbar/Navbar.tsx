@@ -17,13 +17,13 @@ export default function Navbar() {
           Rachel <span className="font-normal">Hancock</span>
         </Link>
       </div>
-      <Popover className="relative">
+      <Popover className="relative z-50">
         <div className="flex items-center justify-between pl-5 pr-7 py-4 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+          <Link href="/" className="flex justify-start lg:w-0 lg:flex-1">
             <h1 className="text-xl md:hidden tracking-widest font-light uppercase">
               Rachel <span className="font-medium">Hancock</span>
             </h1>
-          </div>
+          </Link>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="flex sm:inline-flex items-center justify-center sm:justify-center rounded-md focus:outline-none">
               <span className="sr-only">Open menu</span>
@@ -41,7 +41,9 @@ export default function Navbar() {
             </div>
             <div
               className={
-                router.pathname == "/exhibitions" ? "font-semibold" : ""
+                router.pathname.startsWith("/exhibitions")
+                  ? "font-semibold"
+                  : ""
               }
             >
               <Link href="/exhibitions" className="tracking-widest">
@@ -50,7 +52,9 @@ export default function Navbar() {
             </div>
             <div
               className={
-                router.pathname == "/collections" ? "font-semibold" : ""
+                router.pathname.startsWith("/collections")
+                  ? "font-semibold"
+                  : ""
               }
             >
               <Link href="/collections" className="tracking-widest">

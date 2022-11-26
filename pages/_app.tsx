@@ -43,7 +43,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
         />
       </Head>
       {getLayout(
-        <main>
+        <main className="screen">
           <Component {...pageProps} />
         </main>
       )}

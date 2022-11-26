@@ -1,4 +1,4 @@
-import ImageLinks from "../components/Gallery/ImageLinks";
+import ImageLinks from "../components/Collections/ImageLinks";
 
 import Head from "next/head";
 import Layout from "../components/Layout/Layout";
@@ -9,7 +9,10 @@ export default function Collections() {
     <>
       <Head>
         <title>Collections</title>
-        <meta name="description" content="Website privacy policy page" />
+        <meta
+          name="description"
+          content="Collections of oil paintings, prints and etchings."
+        />
       </Head>
       <ImageLinks />
     </>
