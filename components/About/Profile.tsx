@@ -8,7 +8,7 @@ export default function Profile() {
         <div className="mx-auto max-w-prose text-base lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-8">
           <div>
             <p className="text-md tracking-wider font-light pb-2">THE ARTIST</p>
-            <h1 className="tracking-widest text-4xl md:text-5xl pb-2 font-medium uppercase">
+            <h1 className="tracking-widest text-4xl md:text-5xl pb-2 font-light uppercase">
               Meet Rachel
             </h1>
           </div>
