@@ -3,16 +3,14 @@ import Link from "next/link";
 
 const products = [
   {
-    id: 1,
     label: "2022 COLLECTION",
-    href: "",
+    href: "/collections/2022",
     imageSrc: "/penlee-point.png",
     imageAlt: "Penlee point oil painting",
   },
   {
-    id: 3,
     label: "Prints",
-    href: "",
+    href: "/collections/prints",
     imageSrc: "/shaugh-prior.png",
     imageAlt: "Shaugh prior oil painting",
   },
@@ -20,7 +18,7 @@ const products = [
 
 const Images = () => {
   return (
-    <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8 pb-4 sm:pb-0">
       <div className="flex items-center justify-end pb-4 pr-4">
         <Link
           href="/collections"
@@ -30,9 +28,9 @@ const Images = () => {
           <span aria-hidden="true"> &rarr;</span>
         </Link>
       </div>
-      <div className=" grid grid-cols-1 gap-x-8 gap-y-8 sm:grid-cols-2 sm:gap-y-10 pb-16 sm:pb-32">
+      <div className="grid grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 sm:gap-y-10 pb-24 sm:pb-32">
         {products.map((product) => (
-          <div key={product.id} className="group relative">
+          <div key={product.label} className="group relative">
             <Link href={product.href}>
               <div className="aspect-w-2 aspect-h-1 overflow-hidden shadow-lg hover:brightness-110">
                 <Image
@@ -58,7 +56,7 @@ export default function Collections() {
     <div className="relative bg-[#EAF1F2]">
       <div className="relative mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
         {/* Background image and overlap */}
-        <div className="relative pt-16 sm:pt-32 pb-12">
+        <div className="relative pt-28 sm:pt-24 pb-12">
           <h1 className="tracking-tight text-[#556973] text-4xl md:text-5xl opacity-80 uppercase font-light pb-2">
             Collections
           </h1>

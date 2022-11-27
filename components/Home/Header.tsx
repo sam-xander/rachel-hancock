@@ -45,7 +45,7 @@ export default function Header() {
         aria-hidden="true"
         className="absolute inset-0 bg-[#2d241c] opacity-60"
       />
-      <div className="relative mx-auto flex max-w-3xl flex-col items-center py-28 px-6 text-center sm:py-30 lg:px-0">
+      <div className="relative mx-auto flex max-w-3xl flex-col items-center py-48 px-6 text-center sm:py-36 lg:px-0">
         <h2 className="text-[#f6f6f6]/95 text-4xl md:text-6xl uppercase font-light tracking-widest">
           OIL PAINTINGS
         </h2>

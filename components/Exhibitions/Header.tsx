@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <div className="lg:relative">
-      <div className="mx-auto w-full max-w-7xl pt-16 pb-20 text-center lg:py-36 lg:text-left">
+      <div className="mx-auto w-full max-w-7xl py-28 text-center lg:py-36 lg:text-left">
         <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
           <p className="text-md tracking-wider pb-2 font-light">
             NOV 16TH - DEC 4TH 2022
@@ -24,7 +24,7 @@ export default function Header() {
           </Link>
         </div>
       </div>
-      <div className="relative h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
+      <div className="relative h-96 w-full md:h-[36rem] lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2">
         <Image
           src="/st-ives-mockup.png"
           alt=""

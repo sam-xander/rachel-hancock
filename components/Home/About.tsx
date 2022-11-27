@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="relative bg-[#8D6F57]">
+    <div className="relative bg-[#8D6F57] py-12 sm:py-0">
       <div className="absolute inset-0">
         <Image
           className="h-full w-full object-cover invert opacity"

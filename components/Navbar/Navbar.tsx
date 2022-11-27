@@ -20,12 +20,12 @@ export default function Navbar() {
       <Popover className="relative z-50">
         <div className="flex items-center justify-between pl-5 pr-7 py-4 md:justify-start md:space-x-10">
           <Link href="/" className="flex justify-start lg:w-0 lg:flex-1">
-            <h1 className="text-xl md:hidden tracking-widest font-light uppercase">
+            <h1 className="text-xl md:hidden tracking-widest font-light uppercase outline-none">
               Rachel <span className="font-medium">Hancock</span>
             </h1>
           </Link>
           <div className="-my-2 -mr-2 md:hidden">
-            <Popover.Button className="flex sm:inline-flex items-center justify-center sm:justify-center rounded-md focus:outline-none">
+            <Popover.Button className="flex sm:inline-flex items-center justify-center sm:justify-center rounded-md focus:outline-none outline-none">
               <span className="sr-only">Open menu</span>
               <Bars2Icon className="h-8 w-8" aria-hidden="true" />
             </Popover.Button>
@@ -125,7 +125,7 @@ export default function Navbar() {
                     </h1>
                   </Link>
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center p-2 hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                    <Popover.Button className="inline-flex items-center justify-center p-2 hover:brightness-110 focus:outline-none outline-none">
                       <span className="sr-only">Close menu</span>
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>

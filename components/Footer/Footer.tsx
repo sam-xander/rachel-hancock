@@ -27,7 +27,7 @@ const navigation = {
 export default function Footer() {
   return (
     <footer className="bg-[#556973]">
-      <div className="mx-auto max-w-7xl overflow-hidden py-12 px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl overflow-hidden py-16 sm:py-12 px-4 sm:px-6 lg:px-8">
         <nav
           className="-mx-5 -my-2 flex flex-wrap justify-center"
           aria-label="Footer"
@@ -36,7 +36,7 @@ export default function Footer() {
             <div key={item.name} className="px-5 py-2">
               <Link
                 href={item.href}
-                className="text-lg text-[#f6f6f6]/80 hover:brightness-110"
+                className="text-lg text-[#f6f6f6]/80 hover:brightness-110 tracking-widest"
               >
                 {item.name}
               </Link>
